@@ -1,0 +1,23 @@
+def find_maximum(numbers):
+    """
+    Finds the maximum element in a list of numbers.
+    """
+    max_num = float('-inf')
+
+    for num in numbers:
+        if num > max_num:
+            max_num = num
+
+    return max_num
+
+
+def print_max_element(numbers):
+    """
+    Prints the maximum element in a list of numbers.
+    """
+    max_num = find_maximum(numbers)
+    print("Maximum Element:", max_num)
+
+
+data = [4, 9, 2, 7, 5]
+print_max_element(data)
